@@ -1,7 +1,7 @@
 # Contact-List-App
 <img src="contactlistapp.JPG" alt="mean stack app">
-##MEAN Stack RESTful API
-###This repo contains the code for a RESTful API Contact List App that was built using the MEAN stack:
+## MEAN Stack RESTful API
+### This repo contains the code for a RESTful API Contact List App that was built using the MEAN stack:
 
 *MongoDB
 *NodeJS
@@ -60,7 +60,7 @@ MongoDB Enterprise > db.contactlist.find().pretty()<br />
 MongoDB Enterprise ><br />
 
 
-##Install the Node modules with
+## Install the Node modules with
 
 npm install
 
