@@ -1,5 +1,5 @@
-﻿# Contact-List-App
-<img src="Contact-List-App/contactlistapp.JPG" alt="mean stack app">
+# Contact-List-App
+<img src="contactlistapp.JPG" alt="mean stack app">
 ##MEAN Stack RESTful API
 ###This repo contains the code for a RESTful API Contact List App that was built using the MEAN stack:
 
