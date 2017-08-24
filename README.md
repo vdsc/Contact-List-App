@@ -1,12 +1,12 @@
-# Contact-List-App
+
 <img src="contactlistapp.JPG" alt="mean stack app">
 ## MEAN Stack RESTful API
 ### This repo contains the code for a RESTful API Contact List App that was built using the MEAN stack:
 
-*MongoDB
-*NodeJS
-*Express
-*AngularJS
+* MongoDB
+* NodeJS
+* Express
+* AngularJS
 
 Install Mongodb and run it using command prompt by going to the /bin and running:<br />
 mongod<br />
