@@ -8,56 +8,56 @@
 *Express
 *AngularJS
 
-Install Mongodb and run it using command prompt by going to the /bin and running:
-mongod
-After mongodb is running, open another cmd window and use the following commands to create and db,
-MongoDB Enterprise > show dbs
-admin  0.000GB
-local  0.000GB
-MongoDB Enterprise > use contactlist
-switched to db contactlist
-MongoDB Enterprise > db.contactlist.insert({name:"Tom",email:"tom@testemail.com", number:"(444) 444-4444"})
-WriteResult({ "nInserted" : 1 })
-MongoDB Enterprise > db.contactlist.find()
-{ "_id" : ObjectId("599de11b47aded362050760e"), "name" : "Tom", "email" : "tom@testemail.com", "number" : "(444) 444-4444" }
-MongoDB Enterprise > db.contactlist.find().pretty()
-{
-        "_id" : ObjectId("599de11b47aded362050760e"),
-        "name" : "Tom",
-        "email" : "tom@testemail.com",
-        "number" : "(444) 444-4444"
+Install Mongodb and run it using command prompt by going to the /bin and running:<br />
+mongod<br />
+After mongodb is running, open another cmd window and use the following commands to create and db,<br />
+MongoDB Enterprise > show dbs <br />
+admin  0.000GB<br />
+local  0.000GB<br />
+MongoDB Enterprise > use contactlist<br />
+switched to db contactlist<br />
+MongoDB Enterprise > db.contactlist.insert({name:"Tom",email:"tom@testemail.com", number:"(444) 444-4444"})<br />
+WriteResult({ "nInserted" : 1 })<br />
+MongoDB Enterprise > db.contactlist.find()<br />
+{ "_id" : ObjectId("599de11b47aded362050760e"), "name" : "Tom", "email" : "tom@testemail.com", "number" : "(444) 444-4444" }<br />
+MongoDB Enterprise > db.contactlist.find().pretty()<br />
+{<br />
+        "_id" : ObjectId("599de11b47aded362050760e"),<br />
+        "name" : "Tom",<br />
+        "email" : "tom@testemail.com",<br />
+        "number" : "(444) 444-4444"<br />
+}<br />
+MongoDB Enterprise > db.contactlist.insert([{name:"Tracy", email:"tracy@testemail2.com", number:"(555) 555-5555"}, {name:"Tucker", <br />email:"tucker@testemail3.com", number: "(434) 433-5555"}])<br />
+BulkWriteResult({<br />
+        "writeErrors" : [ ],<br />
+        "writeConcernErrors" : [ ],<br />
+        "nInserted" : 2,<br />
+        "nUpserted" : 0,<br />
+        "nMatched" : 0,<br />
+        "nModified" : 0,<br />
+        "nRemoved" : 0,<br />
+        "upserted" : [ ]<br />
+})<br />
+MongoDB Enterprise > db.contactlist.find().pretty()<br />
+{<br />
+        "_id" : ObjectId("599de11b47aded362050760e"),<br />
+        "name" : "Tom",<br />
+        "email" : "tom@testemail.com",<br />
+        "number" : "(444) 444-4444"<br />
+}<br />
+{<br />
+        "_id" : ObjectId("599de1f147aded362050760f"),<br />
+        "name" : "Tracy",<br />
+        "email" : "tracy@testemail2.com",<br />
+        "number" : "(555) 555-5555"<br />
 }
-MongoDB Enterprise > db.contactlist.insert([{name:"Tracy", email:"tracy@testemail2.com", number:"(555) 555-5555"}, {name:"Tucker", email:"tucker@testemail3.com", number: "(434) 433-5555"}])
-BulkWriteResult({
-        "writeErrors" : [ ],
-        "writeConcernErrors" : [ ],
-        "nInserted" : 2,
-        "nUpserted" : 0,
-        "nMatched" : 0,
-        "nModified" : 0,
-        "nRemoved" : 0,
-        "upserted" : [ ]
-})
-MongoDB Enterprise > db.contactlist.find().pretty()
 {
-        "_id" : ObjectId("599de11b47aded362050760e"),
-        "name" : "Tom",
-        "email" : "tom@testemail.com",
-        "number" : "(444) 444-4444"
-}
-{
-        "_id" : ObjectId("599de1f147aded362050760f"),
-        "name" : "Tracy",
-        "email" : "tracy@testemail2.com",
-        "number" : "(555) 555-5555"
-}
-{
-        "_id" : ObjectId("599de1f147aded3620507610"),
-        "name" : "Tucker",
-        "email" : "tucker@testemail3.com",
-        "number" : "(434) 433-5555"
-}
-MongoDB Enterprise >
+        "_id" : ObjectId("599de1f147aded3620507610"),<br />
+        "name" : "Tucker",<br />
+        "email" : "tucker@testemail3.com",<br />
+        "number" : "(434) 433-5555"<br />
+}<br />
+MongoDB Enterprise ><br />
 
 
 ##Install the Node modules with
